@@ -67,7 +67,7 @@ def second_plot(datas):
     plt.ylabel('Frenquency', fontsize=15)
     plt.show()
 
-def main():
+def Flood():
     df = pd.read_csv('Flood.csv')
     date, value, datas = parse(df)
     first_plot(date, value)
@@ -115,7 +115,7 @@ def parse2(df):
 
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
-def main2():
+def CoastalStorm():
     df = pd.read_csv('CoastalStorm.csv')
     date, value, datas = parse2(df)
     first_plot(date, value)
@@ -161,7 +161,7 @@ def parse3(df):
 
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
-def main3():
+def Drought():
     df = pd.read_csv('Drought.csv')
     date, value, datas = parse3(df)
     first_plot(date, value)
@@ -207,7 +207,7 @@ def parse4(df):
 
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
-def main4():
+def Earthquake():
     df = pd.read_csv('Earthquake.csv')
     date, value, datas = parse4(df)
     first_plot(date, value)
@@ -253,7 +253,7 @@ def parse5(df):
 
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
-def main5():
+def Fire():
     df = pd.read_csv('Fire.csv')
     date, value, datas = parse5(df)
     first_plot(date, value)
@@ -301,7 +301,7 @@ def parse6(df):
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
 
-def main6():
+def Freezing():
     df = pd.read_csv('Freezing.csv')
     date, value, datas = parse6(df)
     first_plot(date, value)
@@ -350,7 +350,7 @@ def parse7(df):
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
 
-def main7():
+def Hurricane():
     df = pd.read_csv('Hurricane.csv')
     date, value, datas = parse7(df)
     first_plot(date, value)
@@ -399,7 +399,7 @@ def parse8(df):
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
 
-def main8():
+def SevereIceStorm():
     df = pd.read_csv('SevereIceStorm.csv')
     date, value, datas = parse8(df)
     first_plot(date, value)
@@ -448,7 +448,7 @@ def parse9(df):
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
 
-def main9():
+def SevereStorm():
     df = pd.read_csv('SevereStorm(s).csv')
     date, value, datas = parse9(df)
     first_plot(date, value)
@@ -497,7 +497,7 @@ def parse10(df):
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
 
-def main10():
+def Snow():
     df = pd.read_csv('Snow.csv')
     date, value, datas = parse10(df)
     first_plot(date, value)
@@ -546,7 +546,7 @@ def parse11(df):
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
 
-def main11():
+def Tornado():
     df = pd.read_csv('Tornado.csv')
     date, value, datas = parse11(df)
     first_plot(date, value)
@@ -595,7 +595,7 @@ def parse12(df):
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
 
-def main12():
+def Typhoon():
     df = pd.read_csv('Typhoon.csv')
     date, value, datas = parse12(df)
     first_plot(date, value)
@@ -642,7 +642,7 @@ def parse13(df):
     return (split_date[::-1], split_value[::-1], datas[::-1])
 
 
-def main13():
+def Other():
     df = pd.read_csv('Other.csv')
     date, value, datas = parse13(df)
     first_plot(date, value)
@@ -658,16 +658,16 @@ def main13():
 
 
 if __name__ == '__main__':
-    main()
-    main2()
-    main3()
-    main4()
-    main5()
-    main6()
-    main7()
-    main8()
-    main9()
-    main10()
-    main11()
-    main12()
-    main13()
+    Flood()
+    CoastalStorm()
+    Drought()
+    Earthquake()
+    Fire()
+    Freezing()
+    Hurricane()
+    SevereIceStorm()
+    SevereStorm()
+    Snow()
+    Tornado()
+    Typhoon()
+    Other()
