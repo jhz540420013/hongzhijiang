@@ -61,7 +61,7 @@ def main():
 	    	if '.csv' in file:
 	    		print (file)
 	    		df = pd.read_csv(file,sep=',',header=0, usecols=[10])
-    			first_plot(date, value)
+    			first_plot(df)
     # list = Counter([row['State'] for row in pd.read_csv('Flood.csv').iterrows()])
     			data = pd.read_csv(file,sep=',',header=0, usecols=[5])
     			second_plot(data)
